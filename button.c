@@ -11,10 +11,10 @@ int button_debounce() {  // vi är i ett avstudsningsfat
     if (bit_is_set(PIND, PD2)) {
         if (oldTime == 0) {
             oldTime = time;  // updaterar
-            printf("released\r\n");
+            printf("pushed\r\n");
         }
     } else if (oldTime != 0 && (time - oldTime) > 10) {
         oldTime = 0;
-        printf("pushed\r\n");
+        printf("released\r\n");
     }
 }

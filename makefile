@@ -4,6 +4,7 @@ BIN = lab3# namn på output-binären
 SOURCES = \
 		  main.c \
 		  serial.c\
+		  led.c\
 		  timer.c\
 		  button.c
 
